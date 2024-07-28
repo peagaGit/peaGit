@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--
+    <script src="https://code.responsivevoice.org/responsivevoice.js"></script>
+    -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@700&family=Inter:wght@400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>TGG (ALPHA 1.1)</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="container__conteudo">
+            <div class="container__informacoes">
+                <div class="container__texto">
+                    <h1></h1>
+                    <p class="texto__paragrafo"></p>
+                </div>
+                <input class="container__input" placeholder="Eu escolho . . .">
+                <div class="chute container__botoes">
+                    <button onclick="verificarChute()" class="botao_chutar"> Chutar </button>
+                    <button onclick="novoJogo()" id="reiniciar" class="botao_novo" disabled> Novo jogo </button>
+                    <button onclick="maisJogos()" class="container__botaoMais"> Mais jogos (Em breve) </button>
+                    <!-- 
+                    <button onclick="aumentarLevel()" class="container__botao" disabled> Nível + </button>
+                    <button onclick="diminuirLevel()" class="container__botao" disabled> Nível - </button> 
+                    -->
+                </div>
+            </div> <img src="./img/dadoCosmico.2.png" alt="dado de 100 lados" class="container__imagem-dado" />
+        </div>
+    </div>
+
+
+
+
+    <script src="app.js" defer></script>
+</body>
+
+</html>
