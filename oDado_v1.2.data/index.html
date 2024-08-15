@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Carregamento de CSS e Favicon -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="img.data/dadoCosmico.2.png">
+
+    <!-- Fontes do Google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@700&family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@1,700&display=swap" rel="stylesheet">
+
+    <!-- SweetAlert2 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/sweetalert2@11.12.4/dist/sweetalert2.min.css" rel="stylesheet">
+
+    <title>Desafio do Dado Infinito! ♾</title>
+</head>
+<body>
+    <div class="container">
+        <div class="container__conteudo">
+            <div class="container__informacoes">
+                <div class="container__texto">
+                    <h1></h1>
+                    <p class="texto__paragrafo"></p>
+                </div>
+                <div class="container__botoes">
+                    <input class="container__input" id="inputId" placeholder="Eu escolho . . ." disabled>
+                    <button onclick="verificarChute()" id="chutar" class="botao_chutar">Jogar</button>
+                </div>
+                <div class="container__botoes2">
+                    <button onclick="novoJogo()" id="novoJogo" class="botao_novo" disabled>Reiniciar</button>
+                    <button onclick="notas()" class="notas_att" title="Baixar notas de atualização v1.2.1.">🛈</button>
+                    <a href="https://github.com/peagaGit" target="_blank">
+                        <p class="peaga" title="Ir para: Perfil de Henrique no GitHub.">|<i> Peaga &copy; 2024</i></p>
+                    </a>
+                </div>
+            </div>
+            <img src="./img.data/dadoCosmico.2.png" alt="dado de 100 lados" class="container__imagem-dado" />
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.12.4/dist/sweetalert2.all.min.js"></script>
+    <script src="app.js" defer></script>
+</body>
+</html>
+<!--v1.2.1-->
